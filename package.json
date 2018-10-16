@@ -1,0 +1,13 @@
+{
+  "name": "minhapadaria.mobile.com",
+  "version": "3.1",
+  "displayName": "Minha Padaria",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "~7.0.0"
+  }
+}

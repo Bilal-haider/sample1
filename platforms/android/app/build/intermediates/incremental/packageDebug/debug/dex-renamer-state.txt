@@ -1,0 +1,4 @@
+#Fri Oct 12 13:37:50 PKT 2018
+base.0=/Users/bilal/Data-drive/Fiverr/mmmsanders/lateste/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/bilal/Data-drive/Fiverr/mmmsanders/lateste/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex
