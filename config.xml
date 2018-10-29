@@ -16,25 +16,6 @@
     <gap:plugin name="cordova-plugin-device" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
-    <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="1.0.1" />
-    <gap:plugin name="cordova-plugin-network-information" source="npm" />
-    <gap:plugin name="cordova-plugin-request-location-accuracy" source="npm" spec="2.2.0" />
-    <gap:plugin name="cordova-plugin-x-toast" source="npm" spec="2.6.0" />
-    <gap:plugin source="git" spec="https://github.com/razorpay/razorpay-cordova.git" />
-    <gap:plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />
-    <gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.7.1" />
-    <gap:plugin name="cordova-plugin-googlemaps-plus" source="npm">
-        <param name="API_KEY_FOR_ANDROID" value="AIzaSyDWrOgg2HWeNbOs-NoCDj-bMccnj4MFRL8" />
-        <param name="API_KEY_FOR_IOS" value="AIzaSyDWrOgg2HWeNbOs-NoCDj-bMccnj4MFRL8" />
-        <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="MinhaPadaria deseja saber sua localizacao" />
-        <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="MinhaPadaria deseja saber sua localizacao" />
-    </gap:plugin>
-    <gap:plugin name="cordova-plugin-buildinfo" source="npm" spec="1.1.0" />
-    <gap:plugin name="cordova-plugin-googleplus" source="npm" spec="5.1.1">
-        <variable name="REVERSED_CLIENT_ID" value="" />
-    </gap:plugin>
-    <platform name="android" />
-    <platform name="ios" />
     <preference name="fullscreen" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="ShowSplashScreenSpinner" value="false" />
@@ -46,9 +27,6 @@
         </application>
     </gap:config-file>
     <preference name="phonegap-version" value="cli-7.1.0" />
-    <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
-    <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" />
-    <gap:plugin source="git" spec="https://github.com/danwilson/google-analytics-plugin.git" />
     <platform name="ios">
         <config-file parent="NSLocationAlwaysUsageDescription" platform="ios" target="*-Info.plist">
             <string>Karenderia want to always use your location</string>
@@ -121,5 +99,24 @@
         <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
     </platform>
-    <engine name="android" spec="~7.0.0" />
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <plugin name="cordova-plugin-request-location-accuracy" spec="^2.2.3" />
+    <plugin name="cordova-plugin-x-toast" spec="^2.7.0" />
+    <plugin name="com.razorpay.cordova" spec="https://github.com/razorpay/razorpay-cordova.git" />
+    <plugin name="cordova-plugin-media" spec="^5.0.2" />
+    <plugin name="cordova.plugins.diagnostic" spec="^4.0.10" />
+    <gap:plugin name="cordova-plugin-googlemaps-plus" source="npm">
+        <param name="API_KEY_FOR_ANDROID" value="AIzaSyDWrOgg2HWeNbOs-NoCDj-bMccnj4MFRL8" />
+        <param name="API_KEY_FOR_IOS" value="AIzaSyDWrOgg2HWeNbOs-NoCDj-bMccnj4MFRL8" />
+        <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="MinhaPadaria deseja saber sua localizacao" />
+        <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="MinhaPadaria deseja saber sua localizacao" />
+    </gap:plugin>
+    <plugin name="cordova-plugin-buildinfo" spec="^2.0.2" />
+    <gap:plugin name="cordova-plugin-googleplus" source="npm" spec="5.1.1">
+        <variable name="REVERSED_CLIENT_ID" value="" />
+    </gap:plugin>
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
+    <plugin name="cordova-plugin-google-analytics" spec="https://github.com/danwilson/google-analytics-plugin.git" />
 </widget>
